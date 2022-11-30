@@ -1,0 +1,96 @@
+version: "3.1"
+
+stories:
+
+- story: flujo feliz
+  steps:
+  - intent: saludar
+  - action: utter_greet
+
+- story: flujo curso 1
+  steps:
+  - intent: definir_curso
+  - action: utter_definir_curso
+
+- story: flujo mecanismos 1
+  steps:
+  - intent: definir_mecanismos
+  - action: utter_definir_mecanismos
+  - intent: modo_uso
+  - action: utter_modo_uso
+  - intent: porque_uso
+  - action: utter_porque_uso
+  - intent: ejemplificar
+  - action: utter_ejemplo
+
+- story: flujo mecanismos 2
+  steps:
+  - intent: definir_mecanismos
+  - action: utter_definir_mecanismos
+  - intent: ejemplificar
+  - action: utter_ejemplo
+  - intent: modo_uso
+  - action: utter_modo_uso
+  - intent: porque_uso
+  - action: utter_porque_uso
+
+- story: flujo mecanismos 3
+  steps:
+  - intent: definir_mecanismos
+  - action: utter_definir_mecanismos
+  - intent: porque_uso
+  - action: utter_porque_uso
+  - intent: ejemplificar
+  - action: utter_ejemplo
+  - intent: modo_uso
+  - action: utter_modo_uso
+
+- story: flujo def mecanismos 3
+  steps:
+  - intent: definir_mecanismos
+  - action: utter_definir_mecanismos
+
+- story: flujo modo uso
+  steps:
+  - intent: modo_uso
+  - action: utter_modo_uso
+
+- story: flujo ejemplificar
+  steps:
+  - intent: ejemplificar
+  - action: utter_ejemplo
+
+- story: flujo uso mecanismos
+  steps:
+  - intent: porque_uso
+  - action: utter_porque_uso
+
+- story: flujo pregunta hipervisor
+  steps:
+  - intent: preguntar_hipervisor
+  - action: utter_hipervisor
+
+- story: flujo pregunta paginacion
+  steps:
+  - intent: preguntar_paginacion
+  - action: utter_paginacion
+
+- story: flujo pregunta paginacion
+  steps:
+  - intent: preguntar_adm_maquinas_virtuales
+  - action: uter_adm_maquinas_virtuales
+
+- story: flujo pregunta scheduling
+  steps:
+  - intent: preguntar_scheduler
+  - action: uter_scheduler
+
+- story: flujo AgileBot
+  steps:
+    - intent: bot_desafio
+    -action: utter_iamabot
+
+- story: flujo despedida
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

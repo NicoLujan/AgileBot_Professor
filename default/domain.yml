@@ -1,0 +1,60 @@
+version: "3.1"
+
+intents:
+  - saludar
+  - despedirse
+  - afirmar
+  - denegar
+  - estado_alegre
+  - estado_infeliz
+  - bot_desafio
+  - definir_curso
+  - definir_mecanismos
+  - modo_uso
+  - porque_uso
+  - ejemplificar
+  - preguntar_hipervisor
+  - preguntar_paginacion
+  - preguntar_adm_maquinas_virtuales
+  - preguntar_scheduler
+
+responses:
+  utter_greet:
+  - text: "Hola! bienvenido al curso de mecanismo. Estoy para resolver cualquier duda que tengas del curso"
+
+  utter_goodbye:
+  - text: "Nos vemos."
+
+  utter_iamabot:
+  - text: "Soy un AgileBot implementado en Rasa."
+
+  utter_definir_curso:
+  - text: "El curso trata como tema central los mecanismos arquitectonicos en un contexto de desarrollo de software"
+
+  utter_definir_mecanismos:
+  - text: "Son tecnicas que te permiten bajar la complejidad del desarrollo de la arquitectura, facilitando el trabajo de los desarrolladores y garantizando un buen resultado, obteniendo los atributos de calidad deseados"
+
+  utter_modo_uso:
+  - text: "A partir de un analisis de dominio se busca estandarizar comportamientos que pertenezcan al problema general, con esta base es posible plantear soluciones al problema particular, obteniendo una arquitectura bien desarrollada"
+
+  utter_porque_uso:
+  - text: "Si se realiza una implementacion adecuada del mecanismo, el resultado va a coincidir con los atributos de calidad buscados para la arquitectura, generando un sistema facil de entender y mantener"
+
+  utter_ejemplo:
+  - text: "Un ejemplo puede la verificacion de redundancia ciclica que es un mecanismo de deteccion de errores en el ambito de la comunicacion de datos donde el atributo de calidad buscado es la confiabilidad del sistema"
+
+  utter_hipervisor:
+  - text: "El hipervisor es el sistema operativo encargado de crear y administrar las maquinas virtuales para que de esta forma se puedan ejecutar mas de un sistema operativo en la misma maquina"
+
+  utter_paginacion:
+  - text: "La paginacion o tabla de paginas se encarga de mapear direcciones virtuales con direcciones fisicas"
+
+  uter_adm_maquinas_virtuales:
+  - text: "El hipervisor es el encargado de administrar las maquinas virtuales y no se pueden administrar si no hay hipervisor"
+
+  s:
+  - text: "No existe un determinado algoritmo de scheduling que no se pueda utilizar"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,156 @@
+version: "3.1"
+
+nlu:
+- intent: saludar
+  examples: |
+    - hey
+    - hola
+    - buen dia
+    - buenas tardes
+    - buenas noches
+    - Buenos dias
+    - Buenas
+
+- intent: despedirse
+  examples: |
+    - Adios
+    - Chau
+    - Nos vemos
+    - Muchas gracias
+    - Hasta luego
+    - Nos vemos, muchas gracias
+    - Muchas gracias, adios
+    - Que tengas buen dia
+    - Nos vemos luego
+    - Nos vemos mas tarde
+
+- intent: afirmar
+  examples: |
+    - Si
+    - Sisi
+    - Claro
+    - Tenes razon
+    - Por supuesto
+    - Correcto
+
+- intent: denegar
+  examples: |
+    - No
+    - Nono
+    - Nunca
+    - No creo
+    - En realidad no
+    - De ninguna manera
+
+- intent: estado_alegre
+  examples: |
+    - Perfecto
+    - Bien
+    - Increible
+    - Me siento muy bien
+    - Estoy bien
+    - Estoy incrible
+    - Extremadamente bien
+    - Muy bien
+
+- intent: estado_infeliz
+  examples: |
+    - Mi dia fue horrible
+    - Estoy triste
+    - No me siento bien
+    - Estoy decepsionado
+    - Super triste
+    - Estoy tan triste
+    - Triste
+    - Muy triste
+    - Infeliz
+    - Nada bien
+    - Extremadamente triste
+    - Muuuy triste
+
+- intent: bot_desafio
+  examples: |
+    - Sos un bot?
+    - Sos un humano?
+    - Estoy hablando con un bot?
+    - Estoy hablando con un humano?
+
+- intent: definir_curso
+  examples: |
+    - Que se ve en el curso?
+    - Que vamos a ver en el curso?
+    - Sobre que tema trata el curso
+    - Que es este curso?
+    - Que van a explicar el curso?
+    - Curso?
+    - De que es el curso?
+    - Para que sirve el curso?
+
+- intent: definir_mecanismos
+  examples: |
+    - Que son los mecanismos?
+    - Quiero saber que son los mecanismos?
+    - Me podrias decir que son los mecanismos?
+    - No entendi que son los mecanismos?
+    - No me quedo claro que es un mecanismo?
+    - Mecanismo?
+
+- intent: modo_uso
+  examples: |
+    - Como se usan los mecanismos?
+    - Y como se usan?
+    - Como se utilizan los mecanismos?
+    - Y como se utilizan los mecanismos?
+    - De que forma se usan?
+    - De que forma se utilizan?
+    - De que manera se usan los mecanismos?
+    - De que manera se utilizan los mecanismos?
+    - Forma de uso?
+    - Uso?
+    - Manera de eso?
+
+- intent: porque_uso
+  examples: |
+    - Por que deberia usarlos?
+    - Por que se deben usar?
+    - Por que es importante usarlos?
+    - Por que se deberian usar?
+    - Por que es importante su uso?
+    - Por que debo usarlos?
+
+- intent: ejemplificar
+  examples: |
+    - Me podrias dar un ejemplo de mecanismos?
+    - Ejemplificame por favor
+    - Me podes mostrar un ejemplo?
+    - Como por ejemplo?
+    - Algun ejemplo por favor?
+    - Dame un ejemplo
+
+- intent: preguntar_hipervisor
+  examples: |
+    - Que es el hipervisor?
+    - Cual es la funcion de un hipervisor en el contexto de sistemas operativos?
+    - Que hace el hipervisor?
+    - Que es el hipervisor en el contexto de sistemas operativos?
+
+- intent: preguntar_paginacion
+  examples: |
+    - Que es la paginacion?
+    - Que es la paginacion en el contexto de los sistemas operativos?
+    - Que hace la paginacion?
+    - Para que sirve la paginacion?
+    - Que es la tabla de paginas?
+    - Para que sirve la tabla de paginas?
+
+- intent: preguntar_adm_maquinas_virtuales
+  examples: |
+    - Quien administra las maquinas virtuales?
+    - Quien se encarga de administrar las maquinas virtuales?
+    - Quien es el encargado de administrar las maquinas virtuales?
+    - Como se administran las maquinas virtuales?
+
+- intent: preguntar_scheduler
+  examples: |
+    - Que algoritmos de scheduling se pueden utilizar?
+    - Cuales algoritmos de scheduling se usan?
